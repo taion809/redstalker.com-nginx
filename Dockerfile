@@ -18,6 +18,9 @@ ADD		. /etc/nginx
 
 RUN		echo "daemon off;" >> /etc/nginx/nginx.conf
 
+#Attach volume
+VOLUME		/srv
+
 #Expose port 80, can be changed if we put a proxy in front of docker
 EXPOSE		80
 
