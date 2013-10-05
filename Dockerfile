@@ -21,6 +21,8 @@ RUN		echo "daemon off;" >> /etc/nginx/nginx.conf
 #Attach volume
 VOLUME		/srv
 
+RUN		echo "Hello World!" > /srv/index.php
+
 #Expose port 80, can be changed if we put a proxy in front of docker
 EXPOSE		80
 
